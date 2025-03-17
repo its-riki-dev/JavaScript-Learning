@@ -1,0 +1,1 @@
+Log Your name and fav. hobby to the console.
