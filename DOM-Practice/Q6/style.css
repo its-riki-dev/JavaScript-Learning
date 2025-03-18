@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy', sans-serif;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+}
+
+/* MAIN CONTAINER */
+#main {
+  height: 85%;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a, #111);
+  display: flex;
+  padding: 5vw 10vw;
+  border-bottom: 2px solid #222;
+}
+
+/* LEFT SECTION */
+#left {
+  height: 100%;
+  width: 45%;
+  background-color: #222;
+  background-size: cover;
+  background-position: top;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* RIGHT SECTION */
+#right {
+  height: 100%;
+  width: 55%;
+  padding: 0 3vw;
+}
+
+#right h3 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* SONG LIST */
+#all-songs {
+  height: 85%;
+  margin-top: 30px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+#all-songs::-webkit-scrollbar {
+  width: 5px;
+}
+
+#all-songs::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  padding: 18px 15px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.song-card:nth-last-child(1) {
+  border-bottom: 1px solid #333;
+}
+
+.song-card .part1 {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.song-card img {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.song-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.song-card h6 {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+/* PLAYER */
+#player {
+  height: 15%;
+  width: 100%;
+  background: linear-gradient(180deg, #1a1a1a, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-top: 2px solid #222;
+  padding: 15px 0;
+}
+
+#player h3 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#player h3:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+#player h3:active {
+  scale: 0.9;
+}
+
+#player h3 i {
+  font-size: 26px;
+}
