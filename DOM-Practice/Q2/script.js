@@ -1,3 +1,6 @@
+// When we move mouse to left side make the rectangle slow down the more mouse reaches to the left and do the same when mouse goes to the right side.
+
+
 window.addEventListener("mousemove", function(details) {
     var rect = document.querySelector('#rect');
 

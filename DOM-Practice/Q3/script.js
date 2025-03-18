@@ -1,3 +1,6 @@
+// Create a div, and when the mouse moves over it, pictures should pop up and then disappear.
+
+
 const throttleFunction=(func, delay)=>{ 
     let prev = 0; 
     return (...args) => { 
@@ -10,7 +13,6 @@ const throttleFunction=(func, delay)=>{
 } 
 
 document.querySelector("#center").addEventListener("mousemove", throttleFunction((dets) => { 
-    // Your less repetition code 
     var div = document.createElement("div");
     div.classList.add('imagediv');
     div.style.left = dets.clientX + 'px';

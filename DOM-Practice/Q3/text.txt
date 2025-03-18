@@ -1,1 +1,0 @@
-Create a div, and when the mouse moves over it, pictures should pop up and then disappear.
