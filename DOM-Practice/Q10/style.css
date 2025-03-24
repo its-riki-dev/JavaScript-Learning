@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #111;
+}
+
+#page1, #page2, #page3{
+    height: 100vh;
+    width: 100%;
+    padding: 1vw 0;
+}
+
+#move{
+    background-color: #D9FF06;
+    display: flex;
+    padding: 3vw 0;
+    overflow: hidden;
+}
+
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 2.5vw;
+    padding: 0 1vw;
+    transform: translateX(-100%);
+}
+
+.marque h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.marque img{
+    height: 3vw;
+}
